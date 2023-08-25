@@ -2,6 +2,10 @@ import streamlit as st
 import time
 import pandas as pd
 
+secret = st.secrets["secret"]
+
+st.header(f"this is secret {secret}")
+
 
 @st.cache_data
 def get_data():
